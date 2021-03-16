@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Choice Mobile</title>
+     <!--Bootstrap CDN-->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Font Awesome-->
+    <script src="https://kit.fontawesome.com/fa772c2dc0.js" crossorigin="anonymous"></script>
+    <!-- Custom Stylesheet-->
+    <link rel="stylesheet" href="./Css/style.css">
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+<!--JQuery, Popper Js, Bootstrap JS-->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<!-- Navigation-->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+<div class="container-fluid">
+    <div class="logo">
+        <!-- Logo -->
+    <a class="navbar-branch" href="index.html">
+        <img src="./Logo.PNG" height="100">   
+    </a>
+    <!-- Slogan -->
+    <p class="slogan"><em><q>You pay, we award the faith</q></em></p>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse"  data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto"> 
+            <!-- Search bar-->
+            <form class="form-inline" action="#">
+                <input type="text" class="form-control" placeholder="Bạn muốn tìm gì..." id="search-bar">
+                <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
+            </form>
+            <li class="nav-item">
+                <a class="nav-link active" href="#"><i class="fas fa-mobile"></i>Điện thoại</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-tablet-alt"></i>Tablet</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-laptop"></i>Laptop</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-headphones"></i>Phụ kiện</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#"><i class="fas fa-sim-card"></i>Sim-Thẻ cào</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="far fa-question-circle"></i>Hỏi đáp</a>
+            </li>
+        </ul>
+    </div>       
+</div>
+</nav>
+<!--Tạo checkbox "hàng cũ" "hàng mới" "sắp ra mắt" và thanh sắp xếp theo giá "cao tới thấp" "thấp tới cao" : Tất cả nằm trong div "lọc"-->
+<div class="container-fluid">
+    <div class="row banner">
+        <div class="col-sm-1"></div><!--Rỗng-->
+        <div class="col-sm-7 ad-1">
+            <a href="#"><img src="https://cdn.tgdd.vn/2020/03/banner/800-170-800x170-70.png" alt="realme"></a>
+        </div>
+        <div class="col-sm-3 ad-2">
+            <a href="#"><img src="https://cdn.tgdd.vn/2020/04/banner/sticky-samsung-390x80.png" alt="samsung"></a>
+            <a href="#"><img src="https://cdn.tgdd.vn/2020/03/banner/sticky-oppo-a31-390x80.png" alt="oppo"></a>
+        </div>
+        <div class="col-sm-1"></div><!--Rỗng-->
+    </div>
+    <div class="row sort">
+        <div class="col-sm-1"></div><!--Rỗng-->
+        <div class="col-sm-6">
+            <form action="#" class="form-inline">
+                <button type="button" class="sort-item">Lọc <i class="fas fa-filter"></i></button>
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input"  name="new" value="something" checked> Máy mới
+                    </label>
+                </div>
+                <div class="form-check-inline">
+                  <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input"  name="old" value="something">Máy cũ
+                  </label>
+                </div>
+                <div class="form-check-inline">
+                  <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" name="soon" value="something">Máy sắp ra mắt
+                  </label>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-3"></div><!--Rỗng-->
+        <div class="col-sm-1 sort-menu">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                Sắp xếp
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Giá từ thấp tới cao</a>
+                <a class="dropdown-item" href="#">Giá từ cao tới thấp</a>
+                <a class="dropdown-item" href="#">Bán chạy nhất</a>
+              </div>
+        </div>
+        <div class="col-sm-1"></div><!--Rỗng-->
+    </div>
+    <h3 class="category-content">Điện thoại</h3>
+    <div class="row phone">
+        <div class="col-sm-2"></div><!--Rỗng-->
+        <div class="col-sm-2 item">
+            <a href="sanpham.html"><img src="https://cdn.tgdd.vn/Products/Images/42/194251/samsung-galaxy-s10-lite-blue-chi-tiet-400x460.png" alt="samsung"></a>
+            <p><b>Samsung Galaxy S10 Lite</b></p>
+            <p class="price">Giá: 13.990.000 VND</p>
+        </div>
+        <div class="col-sm-2 item">
+            <a href="sanpham.html"><img src="./Sản phẩm/Điện thoại/ss-note-9.jpg" alt="ss-note-9"></a>
+            <p><b>Samsung Note 9</b></p>
+            <p class="price">Giá: 12.550.000 VND</p>
+        </div>
+        <div class="col-sm-2 item">
+            <a href="sanpham.html"><img src="./Sản phẩm/Điện thoại/redmi-k30-5g-blue.jpg" alt="redmi"></a>
+            <p><b>Redmi K30 5G X</b></p>
+            <p class="price">Giá: 5.550.000 VND</p>
+        </div>
+        <div class="col-sm-2 item">
+            <a href="sanpham.html"><img src="./Sản phẩm/Điện thoại/realme-x-blue.jpg" alt="realme"></a>
+            <p><b>Realme X</b></p>
+            <p class="price">Giá: 3.550.000 VND</p>
+        </div>
+        <div class="col-sm-2"></div><!--Rỗng-->
+    </div>
+    <div class="row phone">
+        <div class="col-sm-2"></div><!--Rỗng-->
+        <div class="col-sm-2 item">
+            <a href="sanpham.html"><img src="https://cdn.tgdd.vn/Products/Images/42/190322/iphone-xs-max-256gb-white-400x400.jpg" alt="Iphone XsMAX"></a>
+            <p><b>Iphone Xs Max 256GB</b></p>
+            <p class="price">Giá: 31.950.000 VND</p>
+        </div>
+        <div class="col-sm-2 item">
+            <a href="sanpham.html"><img src="https://cdn.tgdd.vn/Products/Images/42/213022/samsung-galaxy-z-flip-den-600x600-400x400.jpg" alt="ss-galaxy-z flip"></a>
+            <p><b>Samsung Galaxy Z Flip</b></p>
+            <p class="price">Giá: 36.000.000 VND</p>
+        </div>
+        <div class="col-sm-2 item">
+            <a href="sanpham.html"><img src="https://cdn.tgdd.vn/Products/Images/42/217937/samsung-galaxy-s20-ultra-600x600-1-400x400.jpg" alt="samsung"></a>
+            <p><b>Samsung Galaxy S20 Ultra</b></p>
+            <p class="price">Giá: 29.900.000 VND</p>
+        </div>
+        <div class="col-sm-2 item">
+            <a href="sanpham.html"><img src="https://cdn.tgdd.vn/Products/Images/42/198150/oppo-find-x2-blue-600x600-400x400.jpg" alt="oppo"></a>
+            <p><b>Oppo Find X2</b></p>
+            <p class="price">Giá: 23.550.000 VND</p>
+        </div>
+        <div class="col-sm-2"></div><!--Rỗng-->
+    </div>
+    <div class="row phone">
+        <div class="col-sm-2"></div><!--Rỗng-->
+        <div class="col-sm-2 item">
+            <a href="sanpham.html"><img src="https://cdn.tgdd.vn/Products/Images/42/198394/xiaomi-mi-9-se-1-400x400.jpg" alt="xiaomi"></a>
+            <p><b>Xiaomi Mi 9 SE</b></p>
+            <p class="price">Giá: 7.550.000 VND</p>
+        </div>
+        <div class="col-sm-2 item">
+            <a href="sanpham.html"><img src="https://cdn.tgdd.vn/Products/Images/42/209564/realme-5-pro-white-thumb-400x400.jpg" alt="realme"></a>
+            <p><b>Reame 5 Pro</b></p>
+            <p class="price">Giá: 4.950.000 VND</p>
+        </div>
+        <div class="col-sm-2 item">
+            <a href="sanpham.html"><img src="https://cdn.tgdd.vn/Products/Images/42/179673/huawei-nova-3i-600-600-400x400.jpg" alt="huawei"></a>
+            <p><b>Huawei Nova 3i</b></p>
+            <p class="price">Giá: 5.950.000 VND</p>
+        </div>
+        <div class="col-sm-2 item">
+            <a href="sanpham.html"><img src="https://cdn.tgdd.vn/Products/Images/42/208847/vsmart-live-blue-400x400.jpg" alt="vsmart"></a>
+            <p><b>Vsmart Live</b></p>
+            <p class="price">Giá: 3.550.000 VND</p>
+        </div>
+        <div class="col-sm-2"></div><!--Rỗng-->
+        <div class="go-on">
+            <a href="sanpham.html"><button type="button" class="btn btn-outline-primary">Xem thêm Điện thoại</button></a>
+        </div>
+    </div>
+</div>
+<hr>
+<footer>
+    <div class="container-fluid">
+        <div class="row foot1">
+            <ul class="col-sm-4">
+                <li><a href="#">Tìm hiểu về mua trả góp</a></li>
+                <li><a href="#">Chính sách bảo hành</a></li>
+                <li><a href="#">Chính sách đổi trả</a></li>
+                <li><a href="#">Giao hàng & Thanh toán</a></li>
+            </ul>
+            <ul class="col-sm-4">
+                <li><a href="#">Tìm hiểu về Best Choice Mobile</a></li>
+                <li><a href="#">Tuyển dụng</a></li>
+                <li><a href="#">Góp ý</a></li>
+                <li><a href="#">Địa chỉ các chi nhánh</a></li>
+            </ul>
+            <ul class="col-sm-4">
+                <li><p>Gọi mua hàng: <strong>9420.520.1314</strong></p></li>
+                <li><p>Gọi khiếu nại: <strong>9277.530.8084</strong></p></li>
+                <li><p>Gọi bảo hành: <strong>9213.910.9240</strong></p></li>
+                <li><p>Kỹ thuật: <strong>9494.920.2014</strong></p></li>
+            </ul>
+        </div>
+        <div class="row foot2">
+            <div class="col-sm-12">
+                <center><p>©2020 Công ty TNHH Best Choice Mobile. GPDKKD: 25251325 do sở KH & ĐT TP.Imagination cung cấp ngày 05/08/2014.
+                    Địa chỉ: 520 ILoveYou, P. SoMuch, Q.KeepOn, TP. LovingYou. Điện thoại: 92777538.<br>
+                      Email: CSKH@bestchoicemobile.com. Chịu trách nhiệm nội dung: Phạm Mạnh Cường. </p></center>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

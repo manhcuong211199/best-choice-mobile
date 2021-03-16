@@ -1,0 +1,141 @@
+.slogan{
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+}
+.navbar{
+    background-color: rgba(236, 240, 241,1.0) !important;
+}
+.navbar li a {
+    color: black !important;
+}
+.navbar li a:hover {
+    color: #3498db !important;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.carousel-item img{
+    width: 100%;
+    height: 22rem;
+}
+.category-content {
+    text-align: center;
+    color: #0984e3;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 50px;
+}
+.item {
+    border: 1px solid #ecf0f1;
+    border-radius: 5px;
+}
+.phone img{
+    width: 100%;
+    padding: 10px;
+}
+.tablet img{
+    width: 100%;
+}
+.laptop img{
+    width: 100%;
+}
+.accessories img{
+    width: 100%;
+}
+.go-on{
+    margin: 25px auto 25px auto !important;
+}
+.foot1 ul{
+    list-style-type: none;
+}
+.foot2 {
+    background-color: #f5f6fa;
+}
+.foot2 p{
+    font-size: small;
+}
+.header-menu a li{
+    display: inline;
+}
+.brand-item img{
+    width: 100%;
+}
+.banner {
+    margin-bottom: 25px;
+}
+.ad-1 img{
+    width: 100%;
+}
+.ad-2 img{
+    width: 100%;
+    height: 50%;
+}
+.sort-item {
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    background-color: #bdc3c7;
+    padding:5px 20px 5px 20px;
+    margin: 5px;
+}
+.price {
+    color: red;
+}
+.tag-bar p{
+    font-size: smaller;
+    padding: 5px;
+}
+.tag-bar a{
+    text-decoration: none;
+}
+.pro-pic img{
+    width: 100%;
+}
+.buy h3{
+    font-size: x-large;
+    color: red;
+    font-weight: 700;
+}
+.promotion h4{
+    text-align: center;
+}
+.promotion a{
+    text-decoration: none;
+}
+.promotion{
+    border: 1px solid #ecf0f1;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+.buy a{
+    text-decoration: none;
+}
+.buy button{
+    margin-bottom: 15px;
+    padding: 13px;
+}
+.more-details i{
+    padding-left: 80px !important;
+    color: black !important;
+}
+.more-details p{
+    padding-left: 8px;
+}
+.more-details del{
+    color: #7f8c8d;
+}
+.more-details img{
+    width: 70%;
+    padding-left: 70px;
+    padding-right: 5px;
+}
+.more-details a{
+    text-decoration: none;
+}
+.more-details {
+    border: 1px solid #ecf0f1;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+.phone-detail img{
+    width: 100%;
+}

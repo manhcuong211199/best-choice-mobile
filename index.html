@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Choice Mobile</title>
+     <!--Bootstrap CDN-->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Font Awesome-->
+    <script src="https://kit.fontawesome.com/fa772c2dc0.js" crossorigin="anonymous"></script>
+    <!-- Custom Stylesheet-->
+    <link rel="stylesheet" href="./Css/style.css">
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--JQuery, Popper Js, Bootstrap JS-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- Navigation-->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+        <div class="logo">
+            <!-- Logo -->
+        <a class="navbar-branch" href="#">
+            <img src="./Logo.PNG" height="100">   
+        </a>
+        <!-- Slogan -->
+        <p class="slogan"><em><q>You pay, we award the faith</q></em></p>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"  data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto"> 
+                <!-- Search bar-->
+                <form class="form-inline" action="#">
+                    <input type="text" class="form-control" placeholder="Bạn muốn tìm gì..." id="search-bar">
+                    <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
+                </form>
+                <li class="nav-item">
+                    <a class="nav-link active" href="dienthoai.html"><i class="fas fa-mobile"></i>Điện thoại</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-tablet-alt"></i>Tablet</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-laptop"></i>Laptop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-headphones"></i>Phụ kiện</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#"><i class="fas fa-sim-card"></i>Sim-Thẻ cào</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="far fa-question-circle"></i>Hỏi đáp</a>
+                </li>
+            </ul>
+        </div>       
+    </div>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+             <div class="col-sm-6 new-product">
+                <div id="slide" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#slide" data-slide-to="0" class="active"></li>
+                        <li data-target="#slide" data-slide-to="1"></li>
+                        <li data-target="#slide" data-slide-to="2"></li>
+                        <li data-target="#slide" data-slide-to="3"></li>
+                    </ul>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="#"><img src="./Sản phẩm/Slides/Realme 3.jpg" alt="Realme 3"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="#"><img src="./Sản phẩm/Slides/SS Galaxy Note 10.jpg" alt="SS Galaxy Note 10"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="#"><img src="./Sản phẩm/Slides/Iphone 11 Pro.jpg" alt="Iphone 11 Pro"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="#"><img src="./Sản phẩm/Slides/Oppo F11.jpg" alt="Oppo F11"></a>
+                        </div>
+                    </div>
+                    <!-- Left and right controls -->
+                     <a class="carousel-control-prev" href="#slide" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                     </a>
+                     <a class="carousel-control-next" href="#slide" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6">
+               <h3>Tư vấn sản phẩm</h3>
+               <form action="#">
+                <select name="category" class="custom-select mb-3">
+                    <option selected>Loại sản phẩm</option>
+                    <option value="phone">Điện thoại</option>
+                    <option value="tablet">Tablet</option>
+                    <option value="laptop">Laptop</option>
+                    <option value="headphone">Tai nghe</option>
+                    <option value="battery">Pin</option>
+                    <option value="charger">Cáp USB, adapter sạc</option>
+                </select>
+                <select name="brand" class="custom-select mb-3">
+                  <option selected>Hãng</option>
+                  <option value="apple">Apple</option>
+                  <option value="samsung">Samsung</option>
+                  <option value="oppo">Oppo</option>
+                  <option value="asus">Asus</option>
+                  <option value="acer">Acer</option>
+                  <option value="ailenware">Ailenware</option>
+                  <option value="dell">Dell</option>
+                  <option value="gateway">Gateway</option>
+                  <option value="hp">HP</option>
+                  <option value="huawei">Huawei</option>
+                  <option value="htc">HTC</option>
+                  <option value="lenovo">Lenovo</option>
+                  <option value="lg">LG</option>
+                  <option value="toshiba">Toshiba</option>
+                  <option value="vaio">Vaio</option>
+                  <option value="xiaomi">Xiaomi</option>
+                  <option value="vsmart">Vsmart</option>
+                </select>
+                <form class="form-inline" action="#">                   
+                    <label for="from" class="mr-sm-2">Giá từ:</label>
+                    <input type="text" class="form-control mb-2 mr-sm-2" placeholder="0">
+                    <label for="to" class="mr-sm-2">Tới:</label>
+                    <input type="text" class="form-control mb-2 mr-sm-2">
+                </form>
+                <button type="button" class="btn btn-primary">Tìm kiếm</button>
+              </form>
+            </div>
+    </div>   
+    <a href="dienthoai.html"><h3 class="category-content">Điện thoại</h3></a>
+    <div class="row phone">
+        <div class="col-sm-2 item">
+            <a href="#"><img src="./Sản phẩm/Điện thoại/iphone-11.jpg" alt="Iphone"></a>
+            <p><b>Iphone 11</b></p>
+            <p class="price">Giá: 20.550.000 VND</p>
+        </div>
+        <div class="col-sm-2 item">
+            <a href="#"><img src="./Sản phẩm/Điện thoại/oppo-reno-3-pro-5g.jpg" alt="oppo"></a>
+            <p><b>Oppo Reno 3</b></p>
+            <p class="price">Giá: 12.550.000 VND</p>
+        </div>
+        <div class="col-sm-2 item">
+            <a href="#"><img src="./Sản phẩm/Điện thoại/realme-x-blue.jpg" alt="realme"></a>
+            <p><b>Realme X</b></p>
+            <p class="price">Giá: 3.550.000 VND</p>
+        </div>
+        <div class="col-sm-2 item">
+            <a href="#"><img src="./Sản phẩm/Điện thoại/redmi-k30-5g-blue.jpg" alt="redmi"></a>
+            <p><b>Redmi K30 5G X</b></p>
+            <p class="price">Giá: 5.550.000 VND</p>
+        </div>
+        <div class="col-sm-2 item">
+            <a href="#"><img src="./Sản phẩm/Điện thoại/ss-note-9.jpg" alt="ss-note-9"></a>
+            <p><b>Samsung Note 9</b></p>
+            <p class="price">Giá: 12.550.000 VND</p>
+        </div>
+        <div class="col-sm-2 item">
+            <a href="#"><img src="./Sản phẩm/Điện thoại/huawei-mate-20-x.jpg" alt="huawei"></a>
+            <p><b>Huawei Mate 20X</b></p>
+            <p class="price">Giá: 17.550.000 VND</p>
+        </div>
+        <div class="go-on">
+            <a href="dienthoai.html"><button type="button" class="btn btn-outline-primary">Xem thêm điện thoại</button></a>
+        </div>
+    </div>
+    <a href="#"><h3 class="category-content">Tablet</h3></a>
+    <div class="row tablet">
+        <div class="col-sm-2 item">
+            <a href="#"><img src="./Sản phẩm/Tablet/huawei-mediapad-t3-80-400x460.png" alt="huawei"></a>
+            <p><b>Huawei MediaPad T3 8.0 (2017)</b></p>
+            <p class="price">Giá: 3.290.000 VND</p>
+        </div>
+        <div class="col-sm-2 item">
+            <a href="#"><img src="./Sản phẩm/Tablet/ipad-mini-79-inch-wifi-cellular-64gb-2019-1-400x460.png" alt="ipad"></a>
+            <p><b> iPad Mini 7.9 inch Wifi Cellular 64GB (2019)</b></p>
+            <p class="price">Giá:14.490.000 VND</p>
+        </div>
+        <div class="col-sm-2 item">
+            <a href="#"><img src="./Sản phẩm/Tablet/lenovo-tab-4-8-tb-8504x-chitiet-400x500.png" alt="lenovo"></a>
+            <p><b> Samsung Galaxy Tab A 10.1 T515 (2019)</b></p>
+            <p class="price">Giá: 7.490.000 VND</p>
+        </div>
+        <div class="col-sm-2 item">
+            <a href="#"><img src="./Sản phẩm/Tablet/samsung-galaxy-tab-a-101-t515-2019-gold-400x460.png" alt="samsung"></a>
+            <p><b>Lenovo Tab 4 8" 16GB (TB-8504X)</b></p>
+            <p class="price">Giá: 3.100.000 VND</p>
+        </div>
+        <div class="col-sm-2 item">
+            <a href="#"><img src="./Sản phẩm/Tablet/samsung-galaxy-tab-a8-plus-p205-black-400x460.png" alt="samsung"></a>
+            <p><b>Samsung Galaxy Tab with S Pen (P205)</b></p>
+            <p class="price">Giá: 6.990.000 VND</p>
+        </div>
+        <div class="col-sm-2 item">
+            <a href="#"><img src="./Sản phẩm/Tablet/samsung-galaxy-tab-a8-t295-2019-silver-400x460.png" alt="samsung"></a>
+            <p><b>Samsung Galaxy Tab A8 8" T295 (2019)</b></p>
+            <p class="price">Giá: 3.690.000 VND</p>
+        </div>
+        <div class="go-on">
+            <a href="#"><button type="button" class="btn btn-outline-primary">Xem thêm Tablet</button></a>
+        </div>
+    </div>
+    <a href="#"><h3 class="category-content">Laptop</h3></a>
+    <div class="row laptop">
+        <div class="col-sm-2 item">
+            <a href="#"><img src="https://cdn.tgdd.vn/Products/Images/44/212625/acer-aspire-a315-54-36qy-i3-10110u-4gb-256gb-win10-1-600x600.jpg" alt="acer"></a>
+            <p><b>Laptop Acer Aspire A315 54 36QY i3(NX.HM2SV.001)</b></p>
+            <p class="price">Giá: 10.990.000 VND </p>
+        </div>
+        <div class="col-sm-2 item">
+            <a href="#"><img src="https://cdn.tgdd.vn/Products/Images/44/216813/hp-15s-du0072tx-i3-7020u-4gb-256gb-2gb-mx110-win10-1-600x600.jpg" alt="hp"></a>
+            <p><b>Laptop HP 15s du0072TX i3 7020U(8WP16PA)</b></p>
+            <p class="price">Giá: 12.290.000 VND</p>
+        </div>
+        <div class="col-sm-2 item">
+            <a href="#"><img src="https://cdn.tgdd.vn/Products/Images/44/212373/asus-vivobook-a412f-i3-8145u-4gb-32gb-512gb-win10-600x600.jpg" alt="asus"></a>
+            <p><b>Laptop Asus VivoBook A412FA i3 8145U(EK661T)</b></p>
+            <p class="price">Giá: 13.490.000 VND</p>
+        </div>
+        <div class="col-sm-2 item">
+            <a href="#"><img src="https://cdn.tgdd.vn/Products/Images/44/207798/lenovo-ideapad-s145-15iwl-i3-8145u-4gb-256gb-mx110-18-600x600.jpg" alt="lenovo"></a>
+            <p><b>Laptop Lenovo Ideapad S145 15IWL i3 8145U(81MV00SXVN)</b></p>
+            <p class="price">Giá: 10.600.000 VND</p>
+        </div>
+        <div class="col-sm-2 item">
+            <a href="#"><img src="https://cdn.tgdd.vn/Products/Images/44/213095/dell-inspiron-3581-i3-7020u-4gb-1tb-win10-p75f0055-600x600.jpg" alt="dell"></a>
+            <p><b>Laptop Dell Inspiron 3581 i3 7020U(P75F005N81A)</b></p>
+            <p class="price">Giá: 11.490.000 VND</p>
+        </div>
+        <div class="col-sm-2 item">
+            <a href="#"><img src="https://cdn.tgdd.vn/Products/Images/44/106875/apple-macbook-air-mqd32sa-a-i5-5350u-600x600.jpg" alt="macbook"></a>
+            <p><b>Laptop Apple MacBook Air 2017 i5(MQD32SA/A)</b></p>
+            <p class="price">Giá: 19.990.000 VND</p>
+        </div>
+        <div class="go-on">
+            <a href="#"><button type="button" class="btn btn-outline-primary">Xem thêm Laptop</button></a>
+        </div>
+    </div>
+    <a href="#"><h3 class="category-content">Phụ kiện</h3></a>
+    <div class="row accessories">
+        <div class="col-sm-3">
+            <a href="#"><img src="https://cdn.tgdd.vn/Products/Images/58/216289/cap-lightning-1m-xmobile-al01-1000-trang-1-600x600.jpg" alt="cap-usb"></a>
+            <p><b>Cáp Lightning 1m Xmobile AL01-1000 Trắng</b></p>
+            <p class="price">Giá: 90.000 VND</p>
+        </div>
+        <div class="col-sm-3">
+            <a href="#"><img src="https://cdn.tgdd.vn/Products/Images/54/70820/tai-nghe-chup-tai-kanen-ip-952-2-7-600x600.jpg" alt="headphone"></a>
+            <p><b>Tai nghe chụp tai Kanen IP-952</b></p>
+            <p class="price">Giá: 245.000 VND</p>
+        </div>
+        <div class="col-sm-3">
+            <a href="#"><img src="https://cdn.tgdd.vn/Products/Images/57/197290/pin-sac-du-phong-polymer-10000mah-ava-pj-jp191-add-600x600.jpg" alt="battery"></a>
+            <p><b>Pin sạc dự phòng Polymer 10.000 mAh AVA PJ JP191</b></p>
+            <p class="price">Giá: 360.000 VND</p>
+        </div>
+        <div class="col-sm-3">
+            <a href="#"><img src="https://cdn.tgdd.vn/Products/Images/86/220368/chuot-gaming-asus-tuf-m3-den-1-600x600.jpg" alt="mouse"></a>
+            <p><b>Chuột Gaming Asus TUF M3 Đen</b></p>
+            <p class="price">690.000 VND</p>
+        </div>
+        <div class="go-on">
+            <a href="#"><button type="button" class="btn btn-outline-primary">Xem thêm Phụ Kiện</button></a>
+        </div>
+    </div>
+</div>
+<hr>
+<footer>
+    <div class="container-fluid">
+        <div class="row foot1">
+            <ul class="col-sm-4">
+                <li><a href="#">Tìm hiểu về mua trả góp</a></li>
+                <li><a href="#">Chính sách bảo hành</a></li>
+                <li><a href="#">Chính sách đổi trả</a></li>
+                <li><a href="#">Giao hàng & Thanh toán</a></li>
+            </ul>
+            <ul class="col-sm-4">
+                <li><a href="#">Tìm hiểu về Best Choice Mobile</a></li>
+                <li><a href="#">Tuyển dụng</a></li>
+                <li><a href="#">Góp ý</a></li>
+                <li><a href="#">Địa chỉ các chi nhánh</a></li>
+            </ul>
+            <ul class="col-sm-4">
+                <li><p>Gọi mua hàng: <strong>9420.520.1314</strong></p></li>
+                <li><p>Gọi khiếu nại: <strong>9277.530.8084</strong></p></li>
+                <li><p>Gọi bảo hành: <strong>9213.910.9240</strong></p></li>
+                <li><p>Kỹ thuật: <strong>9494.920.2014</strong></p></li>
+            </ul>
+        </div>
+        <div class="row foot2">
+            <div class="col-sm-12">
+                <center><p>©2020 Công ty TNHH Best Choice Mobile. GPDKKD: 25251325 do sở KH & ĐT TP.Imagination cung cấp ngày 05/08/2014.
+                    Địa chỉ: 520 ILoveYou, P. SoMuch, Q.KeepOn, TP. LovingYou. Điện thoại: 92777538.<br>
+                      Email: CSKH@bestchoicemobile.com. Chịu trách nhiệm nội dung: Phạm Mạnh Cường. </p></center>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
